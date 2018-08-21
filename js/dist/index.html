@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Test</title>
+    <script src="https://unpkg.com/lodash@4.16.6"></script>
+
+</head>
+<body>
+
+<h1>AES Parameter Transfer Demo</h1>
+<p><u>Write an Article</u></p>
+<form name="submit_article" action="http://localhost:8080/post.php" method="post">
+    <p><label for="article_title">Article Title: </label><input type="text" size="50" maxlength="155" name="article_title" ></p>
+    <p><label for="article_body">Article Body: </label><textarea name="article_body" rows="7" cols="50"></textarea></p>
+    <p><label for="site_cat">Site Category: <select name="site_cat">
+        <option value="PHP">PHP Scripting</option>
+        <option value="JAVASCRIPT">Javascript Programming</option>
+        <option value="PHOTOSHOP">Photoshop Tips and Tricks</option>
+        <option value="MYSQL">MySQL Database Managament</option>
+        <option value="LINUX">Linux Administration</option>
+    </select></p>
+    <p><input type="button" name="submit" value="Submit" onclick="aes_submit(this.form);" ></p>
+</form>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
